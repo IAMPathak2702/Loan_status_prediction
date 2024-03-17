@@ -27,39 +27,6 @@ TFX provides several components that are used in the pipeline:
 - **Evaluator**: Evaluates the trained models using a held-out evaluation dataset.
 - **Pusher**: Deploys the best-performing model to a serving infrastructure.
 
-### 2. Orchestrators
-
-The pipeline is orchestrated using both Kubeflow and Airflow:
-
-- **Kubeflow**: Orchestrates the execution of TFX components as Kubernetes pods. Provides scalability and manageability for running the pipeline on Kubernetes.
-- **Airflow**: Manages the scheduling and execution of the pipeline components as Airflow DAGs. Allows for complex workflows and integration with external systems.
-
-## Pipeline Execution
-
-The pipeline can be executed as follows:
-
-1. Set up a Kubernetes cluster and install Kubeflow for orchestration.
-2. Set up Airflow and configure it to communicate with Kubeflow.
-3. Define the pipeline components using TFX DSL (Python scripts).
-4. Create and configure the Airflow DAG to schedule and execute the pipeline components.
-5. Run the Airflow DAG to trigger the pipeline execution.
-6. Monitor the pipeline execution using Kubeflow and Airflow UIs.
-7. Deploy the trained model for serving once the pipeline completes successfully.
-
-## Requirements
-
-- Kubernetes cluster
-- Kubeflow
-- Airflow
-- TensorFlow Extended (TFX)
-- Python 3.x
-- Google Cloud SDK (optional, for cloud-based data storage and processing)
-- Docker (for building custom TFX components)
-- Other dependencies as specified in the requirements.txt file
-
-## Contributing
-
-Contributions to the pipeline are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
