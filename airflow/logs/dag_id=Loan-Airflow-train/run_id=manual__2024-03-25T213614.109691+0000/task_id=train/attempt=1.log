@@ -1,0 +1,30 @@
+[2024-03-25T21:36:22.887+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Loan-Airflow-train.train manual__2024-03-25T21:36:14.109691+00:00 [queued]>
+[2024-03-25T21:36:22.896+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Loan-Airflow-train.train manual__2024-03-25T21:36:14.109691+00:00 [queued]>
+[2024-03-25T21:36:22.897+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T21:36:22.911+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): train> on 2024-03-25 21:36:14.109691+00:00
+[2024-03-25T21:36:22.925+0000] {standard_task_runner.py:60} INFO - Started process 16738 to run task
+[2024-03-25T21:36:22.929+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Loan-Airflow-train', 'train', 'manual__2024-03-25T21:36:14.109691+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/tf-loan.py', '--cfg-path', '/tmp/tmp9gy516jq']
+[2024-03-25T21:36:22.932+0000] {standard_task_runner.py:88} INFO - Job 185: Subtask train
+[2024-03-25T21:36:23.000+0000] {task_command.py:423} INFO - Running <TaskInstance: Loan-Airflow-train.train manual__2024-03-25T21:36:14.109691+00:00 [running]> on host 2c9197141df6
+[2024-03-25T21:36:23.095+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Loan-Airflow-train' AIRFLOW_CTX_TASK_ID='train' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T21:36:14.109691+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T21:36:14.109691+00:00'
+[2024-03-25T21:36:25.057+0000] {logging_mixin.py:188} INFO - Epoch 1/200
+[2024-03-25T21:36:26.628+0000] {logging_mixin.py:188} INFO -  1/15 ━━━━━━━━━━━━━━━━━━━━ 21s 2s/step - loss: 22759.3398 - mae: 138.7050 - mse: 22759.3398
+[2024-03-25T21:36:26.680+0000] {logging_mixin.py:188} INFO - 15/15 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - loss: nan - mae: nan - mse: nan                   
+[2024-03-25T21:36:27.024+0000] {logging_mixin.py:188} INFO - 15/15 ━━━━━━━━━━━━━━━━━━━━ 2s 28ms/step - loss: nan - mae: nan - mse: nan - val_loss: nan - val_mae: nan - val_mse: nan
+[2024-03-25T21:36:27.026+0000] {logging_mixin.py:188} INFO - Epoch 2/200
+[2024-03-25T21:36:27.035+0000] {logging_mixin.py:188} INFO -  1/15 ━━━━━━━━━━━━━━━━━━━━ 0s 8ms/step - loss: 22763.4688 - mae: 138.7188 - mse: 22763.4688
+[2024-03-25T21:36:27.108+0000] {logging_mixin.py:188} INFO - 15/15 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step - loss: nan - mae: nan - mse: nan - val_loss: nan - val_mae: nan - val_mse: nan
+[2024-03-25T21:36:27.111+0000] {logging_mixin.py:188} INFO - Epoch 3/200
+[2024-03-25T21:36:27.124+0000] {logging_mixin.py:188} INFO -  1/15 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - loss: 22763.4688 - mae: 138.7188 - mse: 22763.4688
+[2024-03-25T21:36:27.204+0000] {logging_mixin.py:188} INFO - 15/15 ━━━━━━━━━━━━━━━━━━━━ 0s 6ms/step - loss: nan - mae: nan - mse: nan - val_loss: nan - val_mae: nan - val_mse: nan
+[2024-03-25T21:36:27.207+0000] {logging_mixin.py:188} INFO - Epoch 4/200
+[2024-03-25T21:36:27.225+0000] {logging_mixin.py:188} INFO -  1/15 ━━━━━━━━━━━━━━━━━━━━ 0s 11ms/step - loss: 22763.4688 - mae: 138.7188 - mse: 22763.4688
+[2024-03-25T21:36:27.274+0000] {logging_mixin.py:188} INFO - 13/15 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - loss: nan - mae: nan - mse: nan                    
+[2024-03-25T21:36:27.319+0000] {logging_mixin.py:188} INFO - 15/15 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step - loss: nan - mae: nan - mse: nan - val_loss: nan - val_mae: nan - val_mse: nan
+[2024-03-25T21:36:27.323+0000] {logging_mixin.py:188} INFO - Epoch 5/200
+[2024-03-25T21:36:27.338+0000] {logging_mixin.py:188} INFO -  1/15 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - loss: 22763.4688 - mae: 138.7188 - mse: 22763.4688
+[2024-03-25T21:36:27.419+0000] {logging_mixin.py:188} INFO - 15/15 ━━━━━━━━━━━━━━━━━━━━ 0s 6ms/step - loss: nan - mae: nan - mse: nan - val_loss: nan - val_mae: nan - val_mse: nan
+[2024-03-25T21:36:27.430+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-25T21:36:27.440+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Loan-Airflow-train, task_id=train, execution_date=20240325T213614, start_date=20240325T213622, end_date=20240325T213627
+[2024-03-25T21:36:27.521+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-25T21:36:27.545+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

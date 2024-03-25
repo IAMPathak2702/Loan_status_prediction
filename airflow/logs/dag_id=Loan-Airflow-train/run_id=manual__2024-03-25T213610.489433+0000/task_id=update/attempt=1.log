@@ -1,0 +1,13 @@
+[2024-03-25T21:36:28.010+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Loan-Airflow-train.update manual__2024-03-25T21:36:10.489433+00:00 [queued]>
+[2024-03-25T21:36:28.021+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Loan-Airflow-train.update manual__2024-03-25T21:36:10.489433+00:00 [queued]>
+[2024-03-25T21:36:28.022+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-25T21:36:28.045+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): update> on 2024-03-25 21:36:10.489433+00:00
+[2024-03-25T21:36:28.060+0000] {standard_task_runner.py:60} INFO - Started process 18502 to run task
+[2024-03-25T21:36:28.068+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Loan-Airflow-train', 'update', 'manual__2024-03-25T21:36:10.489433+00:00', '--job-id', '186', '--raw', '--subdir', 'DAGS_FOLDER/tf-loan.py', '--cfg-path', '/tmp/tmp4a9zvj4q']
+[2024-03-25T21:36:28.088+0000] {standard_task_runner.py:88} INFO - Job 186: Subtask update
+[2024-03-25T21:36:28.146+0000] {task_command.py:423} INFO - Running <TaskInstance: Loan-Airflow-train.update manual__2024-03-25T21:36:10.489433+00:00 [running]> on host 2c9197141df6
+[2024-03-25T21:36:28.240+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Loan-Airflow-train' AIRFLOW_CTX_TASK_ID='update' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T21:36:10.489433+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T21:36:10.489433+00:00'
+[2024-03-25T21:36:28.287+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-25T21:36:28.299+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Loan-Airflow-train, task_id=update, execution_date=20240325T213610, start_date=20240325T213628, end_date=20240325T213628
+[2024-03-25T21:36:28.332+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-25T21:36:28.375+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
