@@ -38,4 +38,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <img src=https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/images/gif.gif>
 
+<img src=https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/images/Screenshot%202024-03-26%20030758.png>
+<img src=https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/images/Screenshot%202024-03-26%20030806.png>
+<img src=https://github.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/blob/main/images/Screenshot%202024-03-26%20030816.png>
+<img src=https://github.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/blob/main/images/Screenshot%202024-03-26%20030910.png>
+
 
