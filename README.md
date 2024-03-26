@@ -1,6 +1,6 @@
 # Loan Status Prediction Pipeline
 
-This repository contains a loan status prediction pipeline built using TensorFlow Extended (TFX) and orchestrated with Kubeflow and Airflow.
+This repository contains a loan status prediction pipeline built using TensorFlow Extended (TFX),Kubeflow and Airflow.
 
 ## Overview
 
