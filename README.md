@@ -27,7 +27,62 @@ TFX provides several components that are used in the pipeline:
 - **Evaluator**: Evaluates the trained models using a held-out evaluation dataset.
 - **Pusher**: Deploys the best-performing model to a serving infrastructure.
 
+# Loan Status Prediction Model Tree
+```Bash
+tree
+```
 
+## Overview
+This project contains a machine learning pipeline for predicting loan status. The pipeline includes preprocessing steps, feature engineering, and a logistic regression classifier.
+
+## Custom Transformers
+We have implemented several custom transformers for preprocessing the data:
+
+### MeanImputer
+- Fills missing values with the mean of the column.
+
+### ModeImputer
+- Fills missing values with the mode of the column.
+
+### DropColumns
+- Drops specified columns from the DataFrame.
+
+### DomainProcessor
+- Modifies domain-specific features by adding values from another column.
+
+### CustomLabelEncoder
+- Encodes categorical variables with custom logic.
+
+### LogTransformer
+- Applies a logarithmic transformation to specified columns.
+
+### ColumnTransformer (Custom)
+- Performs custom transformations on specified columns, such as replacing '3+' with '3'.
+
+## Pipeline Configuration
+The pipeline is configured with the following steps:
+1. Domain processing
+2. Mean imputation for numerical features
+3. Mode imputation for categorical features
+4. Dropping unnecessary features
+5. Custom column transformation
+6. Label encoding for categorical features
+7. Log transformation for numerical features
+8. Min-Max scaling
+9. Logistic regression classification
+
+## Model Training and Serialization
+The `perform_training` function is responsible for training the model using the pipeline and saving the trained model to disk.
+
+## Data Handling
+Utility functions are provided for loading datasets and saving/loading the serialized model.
+
+## Usage
+To train the model, navigate to the model's directory and run the `training_pipeline.py` script:
+
+```shell
+python training_pipeline.py
+```
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
