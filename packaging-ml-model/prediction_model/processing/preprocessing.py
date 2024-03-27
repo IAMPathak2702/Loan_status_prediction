@@ -1,7 +1,7 @@
 from sklearn.base import BaseEstimator, TransformerMixin
 import numpy as np
 from prediction_model.config import config
-
+import pandas as pd
 class MeanImputer(BaseEstimator, TransformerMixin):
     def __init__(self, variables=None):
         self.variables = variables
@@ -38,6 +38,8 @@ class ModeImputer(BaseEstimator,TransformerMixin):
         return X_transformed
     
 
+from sklearn.base import BaseEstimator, TransformerMixin
+
 class DropColumns(BaseEstimator, TransformerMixin):
     def __init__(self, variables_to_drop=None):
         self.variables_to_drop = variables_to_drop
@@ -46,23 +48,24 @@ class DropColumns(BaseEstimator, TransformerMixin):
         return self
         
     def transform(self, X):
-        X_transformed = X.copy()
-        X_transformed = X_transformed.drop(columns=self.variables_to_drop)        
+        X_transformed = X.drop(columns=self.variables_to_drop, axis=1)        
         return X_transformed
 
 
-class DomainProcessor(BaseEstimator, TransformerMixin):
-    def __init__(self, variables_to_modify=None, variable_to_add=None):
-        self.variable = variables_to_modify
-        self.reference_variable = variable_to_add
-        
-    def fit(self, X, y=None):
+
+class DomainProcessor(BaseEstimator,TransformerMixin):
+    def __init__(self,variable_to_modify = None, variable_to_add = None):
+        self.variable_to_modify = variable_to_modify
+        self.variable_to_add = variable_to_add
+    
+    def fit(self,X,y=None):
         return self
-        
-    def transform(self, X):
-        X_transformed = X.copy()
-        X_transformed[self.variable] = X_transformed[self.variable] + X_transformed[self.reference_variable]
-        return X_transformed
+    
+    def transform(self,X):
+        X = X.copy()
+        for feature in self.variable_to_modify:
+            X[feature] = X[feature] + X[self.variable_to_add]
+        return X
 
 class CustomLabelEncoder(BaseEstimator,TransformerMixin):
     def __init__(self, variables=None):
@@ -90,21 +93,26 @@ class LogTransformer(BaseEstimator,TransformerMixin):
     def fit(self,X,y=None):
         return self
     
-    def transform(self,X):
+    def transform(self, X):
         X = X.copy()
         for col in self.variables:
+            # Convert to numeric and handle non-numeric values
+            X[col] = pd.to_numeric(X[col], errors='coerce')
+            # Drop NaN values
+            X[col].dropna(inplace=True)
+            # Apply log transformation
             X[col] = np.log(X[col])
         return X
 
-class ColumnTransformer(BaseEstimator,TransformerMixin):
-    def __init__(self,variables=None):
+class ColumnTransformer(BaseEstimator, TransformerMixin):
+    def __init__(self, variables=None):
         self.variables = variables
     
-    def fit(self,X,y=None):
+    def fit(self, X, y=None):
         return self
     
-    def transform(self,X):
+    def transform(self, X):
         X = X.copy()
         for col in self.variables:
-            X[self.variables]=X[self.variables].replace('3+', '3')
+            X[col] = X[col].replace('3+', '3')
         return X

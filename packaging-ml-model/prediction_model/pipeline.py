@@ -7,7 +7,7 @@ import numpy as np
 
 classification_pipeline = Pipeline(
     [
-        ('DomainProcessing',pp.DomainProcessor(variables_to_modify = config.FEATURES_TO_MODIFY,
+        ('DomainProcessing',pp.DomainProcessor(variable_to_modify = config.FEATURES_TO_MODIFY,
         variable_to_add = config.FEATURES_TO_ADD)),
         ('MeanImputation', pp.MeanImputer(variables=config.NUMERICAL_FEATURES)),
         ('ModeImputation',pp.ModeImputer(variables=config.CATEGORICAL_FEATURES)),
@@ -19,3 +19,4 @@ classification_pipeline = Pipeline(
         ('LogisticClassifier',LogisticRegression(random_state=0))
     ]
 )
+
