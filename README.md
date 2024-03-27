@@ -29,6 +29,61 @@ TFX provides several components that are used in the pipeline:
 
 # Loan Status Prediction Model Tree
 
+```bash
+```shell
+C:.
+├───.idea
+│   └───inspectionProfiles
+├───.ipynb_checkpoints
+├───airflow
+│   ├───data
+│   │   └───loan-data
+│   ├───logs
+│   │   └───dag_id=Loan-Airflow-train
+│   │       ├───run_id=manual__2024-03-25T213610.489433+0000
+│   │       │   ├───task_id=preprocess
+│   │       │   ├───task_id=train
+│   │       │   └───task_id=update
+│   │       ├───run_id=manual__2024-03-25T213611.693321+0000
+│   │       │   ├───task_id=preprocess
+│   │       │   ├───task_id=train
+│   │       │   └───task_id=update
+│   │       ├───run_id=manual__2024-03-25T213612.553556+0000
+│   │       │   ├───task_id=preprocess
+│   │       │   ├───task_id=train
+│   │       │   └───task_id=update
+│   │       ├───run_id=manual__2024-03-25T213613.347592+0000
+│   │       │   ├───task_id=preprocess
+│   │       │   ├───task_id=train
+│   │       │   └───task_id=update
+│   │       └───run_id=manual__2024-03-25T213614.109691+0000
+│   │           ├───task_id=preprocess
+│   │           ├───task_id=train
+│   │           └───task_id=update
+│   └───storage
+├───data
+├───images
+├───keras_tuner
+│   └───tf-loan-model
+│       ├───trial_0
+│       ├───trial_1
+│       ├───trial_2
+│       ├───trial_3
+│       └───trial_4
+├───notebooks
+│   └───.ipynb_checkpoints
+├───packaging-ml-model
+│   ├───prediction_model
+│   │   ├───config
+│   │   │   └───__pycache__
+│   │   ├───datasets
+│   │   ├───processing
+│   │   │   └───__pycache__
+│   │   ├───trained_models
+│   │   └───__pycache__
+│   └───tests
+└───tfx
+```
 
 ## Overview
 This project contains a machine learning pipeline for predicting loan status. The pipeline includes preprocessing steps, feature engineering, and a logistic regression classifier.
@@ -89,61 +144,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <img src=https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/images/history_model.png>
 <img src=https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/images/model%20png.png>
 
-```bash
-```shell
-C:.
-├───.idea
-│   └───inspectionProfiles
-├───.ipynb_checkpoints
-├───airflow
-│   ├───data
-│   │   └───loan-data
-│   ├───logs
-│   │   └───dag_id=Loan-Airflow-train
-│   │       ├───run_id=manual__2024-03-25T213610.489433+0000
-│   │       │   ├───task_id=preprocess
-│   │       │   ├───task_id=train
-│   │       │   └───task_id=update
-│   │       ├───run_id=manual__2024-03-25T213611.693321+0000
-│   │       │   ├───task_id=preprocess
-│   │       │   ├───task_id=train
-│   │       │   └───task_id=update
-│   │       ├───run_id=manual__2024-03-25T213612.553556+0000
-│   │       │   ├───task_id=preprocess
-│   │       │   ├───task_id=train
-│   │       │   └───task_id=update
-│   │       ├───run_id=manual__2024-03-25T213613.347592+0000
-│   │       │   ├───task_id=preprocess
-│   │       │   ├───task_id=train
-│   │       │   └───task_id=update
-│   │       └───run_id=manual__2024-03-25T213614.109691+0000
-│   │           ├───task_id=preprocess
-│   │           ├───task_id=train
-│   │           └───task_id=update
-│   └───storage
-├───data
-├───images
-├───keras_tuner
-│   └───tf-loan-model
-│       ├───trial_0
-│       ├───trial_1
-│       ├───trial_2
-│       ├───trial_3
-│       └───trial_4
-├───notebooks
-│   └───.ipynb_checkpoints
-├───packaging-ml-model
-│   ├───prediction_model
-│   │   ├───config
-│   │   │   └───__pycache__
-│   │   ├───datasets
-│   │   ├───processing
-│   │   │   └───__pycache__
-│   │   ├───trained_models
-│   │   └───__pycache__
-│   └───tests
-└───tfx
-```
 
-```
+
 
