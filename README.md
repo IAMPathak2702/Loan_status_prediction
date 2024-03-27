@@ -29,7 +29,7 @@ TFX provides several components that are used in the pipeline:
 
 # Loan Status Prediction Model Tree
 ```Bash
-tree
+tree -o README.md
 ```
 
 ## Overview
