@@ -25,9 +25,7 @@ from sklearn.model_selection import train_test_split
 
 """# Download the data"""
 
-!wget https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/data/loan_data_set.csv
-
-df = pd.read_csv("/content/loan_data_set.csv")
+df = pd.read_csv("data/loan_data_set.csv")
 df
 
 df.info()

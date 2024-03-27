@@ -3,7 +3,7 @@ import numpy as np
 from prediction_model.config import config  
 from prediction_model.processing.data_handeling import load_dataset,save_pipeline
 import prediction_model.processing.preprocessing as pp 
-from prediction_model import pipeline as pipe 
+from prediction_model.processing import pipeline as pipe 
 import sys
 
 def perform_training():
