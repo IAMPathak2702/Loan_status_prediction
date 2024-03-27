@@ -28,9 +28,7 @@ TFX provides several components that are used in the pipeline:
 - **Pusher**: Deploys the best-performing model to a serving infrastructure.
 
 # Loan Status Prediction Model Tree
-```Bash
-tree -o README.md
-```
+
 
 ## Overview
 This project contains a machine learning pipeline for predicting loan status. The pipeline includes preprocessing steps, feature engineering, and a logistic regression classifier.
@@ -94,3 +92,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```bash
 tree -o readme.md
 ```
+Loan_status_prediction-TFX-pipeline/ ├── packaging-ml-model/ │ ├── prediction_model/ │ │ ├── init.py │ │ ├── config.py │ │ ├── datasets/ │ │ │ ├── train.csv │ │ │ └── test.csv │ │ ├── processing/ │ │ │ ├── data_handling.py │ │ │ ├── preprocessing.py │ │ │ └── init.py │ │ ├── trained_models/ │ │ │ └── classification.pkl │ │ ├── pipeline.py │ │ └── training_pipeline.py │ └── README.md └── .gitignore
