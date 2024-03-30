@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/mlruns/182603649671405508/8aec76b2e38141ba9b4252b9aef04fb0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '182603649671405508'
+lifecycle_stage: active
+run_id: 8aec76b2e38141ba9b4252b9aef04fb0
+run_name: thundering-bear-372
+run_uuid: 8aec76b2e38141ba9b4252b9aef04fb0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711810526028
+status: 1
+tags: []
+user_id: Impathak

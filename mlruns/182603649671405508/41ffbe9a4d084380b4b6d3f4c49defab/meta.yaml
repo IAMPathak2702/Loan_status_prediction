@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/mlruns/182603649671405508/41ffbe9a4d084380b4b6d3f4c49defab/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '182603649671405508'
+lifecycle_stage: active
+run_id: 41ffbe9a4d084380b4b6d3f4c49defab
+run_name: dashing-fawn-538
+run_uuid: 41ffbe9a4d084380b4b6d3f4c49defab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711810698053
+status: 1
+tags: []
+user_id: Impathak

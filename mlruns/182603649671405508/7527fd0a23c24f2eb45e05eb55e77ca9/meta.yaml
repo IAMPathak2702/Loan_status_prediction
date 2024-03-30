@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/mlruns/182603649671405508/7527fd0a23c24f2eb45e05eb55e77ca9/artifacts
+end_time: 1711812121644
+entry_point_name: ''
+experiment_id: '182603649671405508'
+lifecycle_stage: active
+run_id: 7527fd0a23c24f2eb45e05eb55e77ca9
+run_name: luminous-lamb-683
+run_uuid: 7527fd0a23c24f2eb45e05eb55e77ca9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711812119337
+status: 3
+tags: []
+user_id: Impathak

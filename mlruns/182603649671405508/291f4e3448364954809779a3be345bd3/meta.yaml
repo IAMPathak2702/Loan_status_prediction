@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/mlruns/182603649671405508/291f4e3448364954809779a3be345bd3/artifacts
+end_time: 1711810926737
+entry_point_name: ''
+experiment_id: '182603649671405508'
+lifecycle_stage: active
+run_id: 291f4e3448364954809779a3be345bd3
+run_name: clean-gull-867
+run_uuid: 291f4e3448364954809779a3be345bd3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711810920910
+status: 3
+tags: []
+user_id: Impathak

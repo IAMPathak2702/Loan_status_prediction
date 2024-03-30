@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/mlruns/182603649671405508/005122ef0a654c7693f3a3bce00e68e5/artifacts
+end_time: 1711810928963
+entry_point_name: ''
+experiment_id: '182603649671405508'
+lifecycle_stage: active
+run_id: 005122ef0a654c7693f3a3bce00e68e5
+run_name: receptive-eel-127
+run_uuid: 005122ef0a654c7693f3a3bce00e68e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711810926739
+status: 3
+tags: []
+user_id: Impathak

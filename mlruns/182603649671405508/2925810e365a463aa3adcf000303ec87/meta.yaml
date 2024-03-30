@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/mlruns/182603649671405508/2925810e365a463aa3adcf000303ec87/artifacts
+end_time: 1711812119322
+entry_point_name: ''
+experiment_id: '182603649671405508'
+lifecycle_stage: active
+run_id: 2925810e365a463aa3adcf000303ec87
+run_name: puzzled-eel-964
+run_uuid: 2925810e365a463aa3adcf000303ec87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711812117132
+status: 3
+tags: []
+user_id: Impathak

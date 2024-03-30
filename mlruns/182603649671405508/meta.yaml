@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/mlruns/182603649671405508
+creation_time: 1711810525507
+experiment_id: '182603649671405508'
+last_update_time: 1711810525507
+lifecycle_stage: active
+name: Loan_prediction
