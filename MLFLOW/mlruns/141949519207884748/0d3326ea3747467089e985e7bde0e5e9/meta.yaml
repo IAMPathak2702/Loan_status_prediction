@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/MLFLOW/mlruns/141949519207884748/0d3326ea3747467089e985e7bde0e5e9/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '141949519207884748'
+lifecycle_stage: active
+run_id: 0d3326ea3747467089e985e7bde0e5e9
+run_name: debonair-newt-726
+run_uuid: 0d3326ea3747467089e985e7bde0e5e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712110053512
+status: 1
+tags: []
+user_id: Impathak

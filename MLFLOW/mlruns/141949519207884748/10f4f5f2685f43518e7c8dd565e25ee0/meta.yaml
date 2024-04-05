@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/MLFLOW/mlruns/141949519207884748/10f4f5f2685f43518e7c8dd565e25ee0/artifacts
+end_time: 1712110359767
+entry_point_name: ''
+experiment_id: '141949519207884748'
+lifecycle_stage: active
+run_id: 10f4f5f2685f43518e7c8dd565e25ee0
+run_name: dazzling-sheep-501
+run_uuid: 10f4f5f2685f43518e7c8dd565e25ee0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712110353006
+status: 3
+tags: []
+user_id: Impathak

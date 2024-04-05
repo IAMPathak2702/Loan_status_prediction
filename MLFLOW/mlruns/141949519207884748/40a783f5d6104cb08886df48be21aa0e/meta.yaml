@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/MLFLOW/mlruns/141949519207884748/40a783f5d6104cb08886df48be21aa0e/artifacts
+end_time: 1712110362594
+entry_point_name: ''
+experiment_id: '141949519207884748'
+lifecycle_stage: active
+run_id: 40a783f5d6104cb08886df48be21aa0e
+run_name: exultant-goat-868
+run_uuid: 40a783f5d6104cb08886df48be21aa0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712110359778
+status: 3
+tags: []
+user_id: Impathak

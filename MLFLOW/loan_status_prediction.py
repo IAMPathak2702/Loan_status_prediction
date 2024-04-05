@@ -155,7 +155,7 @@ def mlflow_logging(model, X, y, name):
     name (str): Name of the model.
     """
     with mlflow.start_run() as run:
-        mlflow.set_tracking_uri("http://127.0.0.1:9505/")
+        # mlflow.set_tracking_uri("http://127.0.0.1:9501/")
         run_id = run.info.run_id
         mlflow.set_tag("run_id", run_id)      
         pred = model.predict(X)

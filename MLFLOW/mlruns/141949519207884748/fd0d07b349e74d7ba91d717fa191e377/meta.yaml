@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/vpved/Documents/GitHub/Loan_status_prediction-TFX-pipeline/MLFLOW/mlruns/141949519207884748/fd0d07b349e74d7ba91d717fa191e377/artifacts
+end_time: 1712110365581
+entry_point_name: ''
+experiment_id: '141949519207884748'
+lifecycle_stage: active
+run_id: fd0d07b349e74d7ba91d717fa191e377
+run_name: wistful-goat-313
+run_uuid: fd0d07b349e74d7ba91d717fa191e377
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712110362601
+status: 3
+tags: []
+user_id: Impathak
