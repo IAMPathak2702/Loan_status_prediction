@@ -143,6 +143,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 # Snapshots of the projects
 <img src=https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/images/history_model.png>
 <img src=https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/images/model%20png.png>
+<img src=https://raw.githubusercontent.com/IAMPathak2702/Loan_status_prediction-TFX-pipeline/main/images/FastApi.png>
 
 
 
