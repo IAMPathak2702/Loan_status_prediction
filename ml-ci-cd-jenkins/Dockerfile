@@ -1,25 +1,29 @@
-FROM python:3.11-slim-buster
+# Use the official Python 3.11 slim-buster image as the base image
+FROM python:3.11.8-slim-bullseye
 
-RUN apt-get update && apt-get install -y \
+# Update package index and install required system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --upgrade pip
+# Upgrade pip to the latest version
+RUN pip install --no-cache-dir --upgrade pip
 
+# Set the working directory in the container
+WORKDIR /code
+
+# Copy the local directory's contents into the container at /code
 COPY . /code
 
-RUN chmod +x /code/src
+# Install Python dependencies from requirements.txt
+RUN pip install --no-cache-dir -r /code/src/requirements.txt
 
+# Expose port 9654 to the outside world
+EXPOSE 9654
 
-RUN pip install --no-cache-dir --upgrade -r code/src/requirements.txt
+# Set PYTHONPATH environment variable
+ENV PYTHONPATH "${PYTHONPATH}:/code/src"
 
-
-EXPOSE  9654
-
-WORKDIR /code/src
-
-ENV PYTHONPATH "${PYTHONPATH}:code/src"
-
-CMD pip install -e .
-
+# Define the default command to run when the container starts
+CMD ["python", "/code/src/prediction_model/training_pipeline.py"]
