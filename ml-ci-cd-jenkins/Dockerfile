@@ -20,14 +20,11 @@ COPY . /code
 RUN pip install --no-cache-dir -r /code/src/requirements.txt
 
 # Expose port 9654 to the outside world
-EXPOSE 9654
+EXPOSE 8005
 
 WORKDIR /code/src
 # Set PYTHONPATH environment variable
 ENV PYTHONPATH "${PYTHONPATH}:/code/src"
-
-
-
 
 RUN pip install -e .
 
